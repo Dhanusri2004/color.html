@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+
+<link rel="stylesheet" href="dhanu.css">
+
+
+  </head>
+<body>
+<title>DHANUSRIM</title>
+<div id="wrapper">
+<div><h class="one"> celcius to fahrenheit converter </h>   </div>
+<div > <input type="text" id="input" placeholder="value in celcius"> </div>
+<div> <button class="two" onclick="convert()"> convert to fahrenheit </button></div>
+
+<div id="result">
+  
+</div>
+</div>
+
+</body>
+<script>
+function convert(){
+  let celciusvalue=Number(document.getElementById("input").value)
+  let fahrenheitvalue=celciusvalue*(9/5)+32
+  let result=document.getElementById("result")
+result.innerHTML=fahrenheitvalue.toFixed(2)+"°F"
+}
+
+  </script>
+</html>
